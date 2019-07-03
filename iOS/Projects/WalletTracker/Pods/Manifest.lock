@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.5.1)
+  - GoogleMaps/Base (2.4.0)
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - Hue (3.0.0)
+  - PieCharts (0.0.5)
+  - ReSwift (4.0.0)
+  - SwiftCharts (0.6)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - GooglePlaces
+  - Hue
+  - PieCharts
+  - ReSwift
+  - SwiftCharts (~> 0.6)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  Hue: b8fe1e43eef13631331eebecb2198b68e2622f95
+  PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
+  ReSwift: f058ef13b46ae5f463f10605ccbbb7fb04424d8d
+  SwiftCharts: d8e6d60679bc982f48f8bea25cf5c1b94fcfec4f
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 360a65a05c5600af13aaf9a429695288118afc1c
+
+COCOAPODS: 1.2.0

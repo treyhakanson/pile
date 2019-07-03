@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialPageOneViewController" customModule="ModalPageView" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="NZg-zh-WlN" id="ThY-f5-sYn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-zh-WlN">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="k4V-uU-B0G"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wra-Nt-1Hk">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is hatchli?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xF-dy-Zo4">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hatchli is all about helping great ideas take flight or fail fast with community feedback" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-u7-DkD">
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-RB-Zd2">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Vds-78-3jy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bJU-RB-Zd2" firstAttribute="centerY" secondItem="NZg-zh-WlN" secondAttribute="centerY" constant="2" id="28a-0B-xtb"/>
+                        <constraint firstItem="bJU-RB-Zd2" firstAttribute="leading" secondItem="NZg-zh-WlN" secondAttribute="leading" constant="-16" id="2Nl-ET-Sjz"/>
+                        <constraint firstItem="k4V-uU-B0G" firstAttribute="top" secondItem="NZg-zh-WlN" secondAttribute="top" constant="25" id="9NA-Rj-cVo"/>
+                        <constraint firstAttribute="trailing" secondItem="wra-Nt-1Hk" secondAttribute="trailing" id="9vN-wR-BMB"/>
+                        <constraint firstItem="wra-Nt-1Hk" firstAttribute="top" secondItem="bJU-RB-Zd2" secondAttribute="bottom" constant="12.5" id="RzZ-cX-uRc"/>
+                        <constraint firstItem="wra-Nt-1Hk" firstAttribute="leading" secondItem="NZg-zh-WlN" secondAttribute="leading" id="UL5-bh-QUE"/>
+                        <constraint firstAttribute="trailing" secondItem="k4V-uU-B0G" secondAttribute="trailing" constant="8" id="Y7W-gk-ItE"/>
+                        <constraint firstItem="k4V-uU-B0G" firstAttribute="centerX" secondItem="NZg-zh-WlN" secondAttribute="centerX" id="bhN-xh-K3O"/>
+                        <constraint firstAttribute="trailing" secondItem="bJU-RB-Zd2" secondAttribute="trailing" constant="-16" id="fFr-vs-uHb"/>
+                        <constraint firstAttribute="width" secondItem="NZg-zh-WlN" secondAttribute="height" multiplier="49:65" id="h0y-bq-Rlg"/>
+                        <constraint firstItem="bJU-RB-Zd2" firstAttribute="top" secondItem="k4V-uU-B0G" secondAttribute="bottom" constant="12.5" id="nES-1r-pip"/>
+                        <constraint firstItem="k4V-uU-B0G" firstAttribute="leading" secondItem="NZg-zh-WlN" secondAttribute="leading" constant="8" id="oyd-LJ-l2N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NZg-zh-WlN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IYR-yL-idn"/>
+                <constraint firstItem="NZg-zh-WlN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="KPD-Vt-eMx"/>
+                <constraint firstItem="NZg-zh-WlN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LUU-Bs-BIX"/>
+                <constraint firstAttribute="trailing" secondItem="NZg-zh-WlN" secondAttribute="trailing" constant="16" id="YXB-yq-Clb"/>
+            </constraints>
+            <point key="canvasLocation" x="61.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sky" width="500" height="500"/>
+    </resources>
+</document>

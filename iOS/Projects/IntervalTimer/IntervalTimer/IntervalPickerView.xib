@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntervalPickerView" customModule="IntervalTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hoS-qB-XqQ"/>
+                <outlet property="pickerView" destination="rWk-bP-nym" id="jz1-Ui-MRF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-bP-nym">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdo-sc-kqe">
+                    <rect key="frame" x="322" y="16" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="04y-vO-7bK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy1-pb-cdg">
+                    <rect key="frame" x="16" y="16" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="jaI-hM-sVI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rWk-bP-nym" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4H4-sj-Np0"/>
+                <constraint firstItem="zy1-pb-cdg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Acy-WZ-x1j"/>
+                <constraint firstItem="zy1-pb-cdg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="H5e-Ia-3jB"/>
+                <constraint firstItem="fdo-sc-kqe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Iot-I1-iSC"/>
+                <constraint firstAttribute="trailing" secondItem="fdo-sc-kqe" secondAttribute="trailing" constant="16" id="SvT-aL-qPG"/>
+                <constraint firstItem="rWk-bP-nym" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gJv-ZE-RTh"/>
+                <constraint firstAttribute="trailing" secondItem="rWk-bP-nym" secondAttribute="trailing" id="os6-O5-SJH"/>
+                <constraint firstAttribute="bottom" secondItem="rWk-bP-nym" secondAttribute="bottom" id="tmC-2d-vTX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="-95"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPickerView" customModule="IntervalTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="6dV-g0-JyO"/>
+                <outlet property="pickerView" destination="DDG-4K-zbl" id="Z3V-Nz-4an"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDG-4K-zbl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6Q-Yn-J5s">
+                    <rect key="frame" x="322" y="16" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="aGj-ZW-Awh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybo-mb-lkJ">
+                    <rect key="frame" x="16" y="16" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="Wvm-TV-tq1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DDG-4K-zbl" secondAttribute="trailing" id="9r2-Ss-ckt"/>
+                <constraint firstItem="DDG-4K-zbl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CwB-Dk-kEf"/>
+                <constraint firstItem="u6Q-Yn-J5s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Hqc-jp-DKG"/>
+                <constraint firstAttribute="bottom" secondItem="DDG-4K-zbl" secondAttribute="bottom" id="MCt-Ep-t7d"/>
+                <constraint firstItem="DDG-4K-zbl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MdZ-7B-R1H"/>
+                <constraint firstAttribute="trailing" secondItem="u6Q-Yn-J5s" secondAttribute="trailing" constant="16" id="WGi-d4-vOy"/>
+                <constraint firstItem="ybo-mb-lkJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="WhZ-1S-vOX"/>
+                <constraint firstItem="ybo-mb-lkJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="nbv-T9-cDw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="29" y="140"/>
+        </view>
+    </objects>
+</document>

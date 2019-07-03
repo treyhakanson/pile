@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'WalletTracker' do
+  use_frameworks!
+
+  # Pods for WalletTracker
+  pod 'ReSwift'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'GooglePlaces'
+  pod 'Hue'
+  pod 'SwiftCharts', '~> 0.6'
+  pod 'PieCharts'
+
+end

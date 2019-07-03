@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WalletTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brm-7R-0J3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Wallet Tracker" id="hv7-VH-roX">
+                                        <barButtonItem key="rightBarButtonItem" image="ic_settings_white" id="rYa-5z-S5p">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="settingsButtonClicked:" destination="BYZ-38-t0r" id="MKh-DV-ayG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eg-hN-Y9a" customClass="PieChart" customModule="PieCharts">
+                                <rect key="frame" x="41" y="80" width="293" height="293"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R0-aG-4cm">
+                                        <rect key="frame" x="112" y="131.5" width="70" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1eg-hN-Y9a" secondAttribute="height" multiplier="1:1" id="UTI-yk-4OI"/>
+                                    <constraint firstItem="5R0-aG-4cm" firstAttribute="centerX" secondItem="1eg-hN-Y9a" secondAttribute="centerX" id="VIu-70-luC"/>
+                                    <constraint firstItem="5R0-aG-4cm" firstAttribute="centerY" secondItem="1eg-hN-Y9a" secondAttribute="centerY" id="qEy-eZ-D3I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeQ-IF-ken" customClass="FillBar" customModule="WalletTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="381" width="343" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D3j-mk-HQ3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDp-GO-lcH" customClass="FillBar" customModule="WalletTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="427" width="343" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jls-Yi-6Qe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-La-Vgc" customClass="FillBar" customModule="WalletTracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="473" width="343" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Had-Pu-8OU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1eg-hN-Y9a" secondAttribute="trailing" constant="25" id="11T-uG-6rM"/>
+                            <constraint firstItem="dAt-La-Vgc" firstAttribute="top" secondItem="rDp-GO-lcH" secondAttribute="bottom" constant="16" id="4dr-sK-Mib"/>
+                            <constraint firstItem="rDp-GO-lcH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CaP-8M-wa9"/>
+                            <constraint firstItem="rDp-GO-lcH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HPc-ZE-O4l"/>
+                            <constraint firstItem="yeQ-IF-ken" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OBG-lh-vEz"/>
+                            <constraint firstItem="yeQ-IF-ken" firstAttribute="top" secondItem="1eg-hN-Y9a" secondAttribute="bottom" constant="8" id="XLM-8h-n9l"/>
+                            <constraint firstItem="1eg-hN-Y9a" firstAttribute="top" secondItem="brm-7R-0J3" secondAttribute="bottom" constant="16" id="de8-73-hJL"/>
+                            <constraint firstItem="rDp-GO-lcH" firstAttribute="top" secondItem="yeQ-IF-ken" secondAttribute="bottom" constant="16" id="dpf-EY-b5M"/>
+                            <constraint firstItem="dAt-La-Vgc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hAx-rq-2M0"/>
+                            <constraint firstItem="1eg-hN-Y9a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="hgt-30-YKg"/>
+                            <constraint firstAttribute="trailing" secondItem="brm-7R-0J3" secondAttribute="trailing" id="lde-Ir-dh5"/>
+                            <constraint firstItem="dAt-La-Vgc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="prj-rz-tCZ"/>
+                            <constraint firstItem="brm-7R-0J3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uuR-9z-Ky9"/>
+                            <constraint firstItem="yeQ-IF-ken" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wTf-Uv-tri"/>
+                            <constraint firstItem="brm-7R-0J3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xQ6-Le-lQt"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="fillBar1" destination="yeQ-IF-ken" id="NvL-rt-KWl"/>
+                        <outlet property="fillBar2" destination="rDp-GO-lcH" id="54m-oY-eJJ"/>
+                        <outlet property="fillBar3" destination="dAt-La-Vgc" id="PKh-Ee-Im7"/>
+                        <outlet property="navigationBar" destination="brm-7R-0J3" id="z3x-gh-0bq"/>
+                        <outlet property="totalSpend" destination="1eg-hN-Y9a" id="iuP-gs-DVl"/>
+                        <outlet property="totalSpendLabel" destination="5R0-aG-4cm" id="uZk-k7-BnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_settings_white" width="24" height="24"/>
+    </resources>
+</document>

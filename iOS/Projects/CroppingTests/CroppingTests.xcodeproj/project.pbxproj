@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EC4F3071D51B51000C84111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4F3061D51B51000C84111 /* AppDelegate.swift */; };
+		2EC4F3091D51B51000C84111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4F3081D51B51000C84111 /* ViewController.swift */; };
+		2EC4F30C1D51B51000C84111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4F30A1D51B51000C84111 /* Main.storyboard */; };
+		2EC4F30E1D51B51000C84111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4F30D1D51B51000C84111 /* Assets.xcassets */; };
+		2EC4F3111D51B51000C84111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4F30F1D51B51000C84111 /* LaunchScreen.storyboard */; };
+		2EFA40971D5237B8005B2F6B /* CropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA40961D5237B8005B2F6B /* CropGridView.swift */; };
+		2EFA40991D52568E005B2F6B /* sample-video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA40981D52568E005B2F6B /* sample-video.mp4 */; };
+		2EFA409E1D52883B005B2F6B /* Left.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA409A1D52883B005B2F6B /* Left.MOV */; };
+		2EFA409F1D52883B005B2F6B /* Portrait.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA409B1D52883B005B2F6B /* Portrait.MOV */; };
+		2EFA40A01D52883B005B2F6B /* Right.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA409C1D52883B005B2F6B /* Right.MOV */; };
+		2EFA40A11D52883B005B2F6B /* Upside.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EFA409D1D52883B005B2F6B /* Upside.MOV */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EC4F3031D51B51000C84111 /* CroppingTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CroppingTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC4F3061D51B51000C84111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EC4F3081D51B51000C84111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EC4F30B1D51B51000C84111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EC4F30D1D51B51000C84111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EC4F3101D51B51000C84111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EC4F3121D51B51000C84111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFA40961D5237B8005B2F6B /* CropGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropGridView.swift; sourceTree = "<group>"; };
+		2EFA40981D52568E005B2F6B /* sample-video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sample-video.mp4"; sourceTree = "<group>"; };
+		2EFA409A1D52883B005B2F6B /* Left.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Left.MOV; sourceTree = "<group>"; };
+		2EFA409B1D52883B005B2F6B /* Portrait.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Portrait.MOV; sourceTree = "<group>"; };
+		2EFA409C1D52883B005B2F6B /* Right.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Right.MOV; sourceTree = "<group>"; };
+		2EFA409D1D52883B005B2F6B /* Upside.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Upside.MOV; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EC4F3001D51B51000C84111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EC4F2FA1D51B51000C84111 = {
+			isa = PBXGroup;
+			children = (
+				2EFA409A1D52883B005B2F6B /* Left.MOV */,
+				2EFA409B1D52883B005B2F6B /* Portrait.MOV */,
+				2EFA409C1D52883B005B2F6B /* Right.MOV */,
+				2EFA409D1D52883B005B2F6B /* Upside.MOV */,
+				2EFA40981D52568E005B2F6B /* sample-video.mp4 */,
+				2EC4F3051D51B51000C84111 /* CroppingTests */,
+				2EC4F3041D51B51000C84111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EC4F3041D51B51000C84111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4F3031D51B51000C84111 /* CroppingTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EC4F3051D51B51000C84111 /* CroppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4F3061D51B51000C84111 /* AppDelegate.swift */,
+				2EC4F3081D51B51000C84111 /* ViewController.swift */,
+				2EFA40961D5237B8005B2F6B /* CropGridView.swift */,
+				2EC4F30A1D51B51000C84111 /* Main.storyboard */,
+				2EC4F30D1D51B51000C84111 /* Assets.xcassets */,
+				2EC4F30F1D51B51000C84111 /* LaunchScreen.storyboard */,
+				2EC4F3121D51B51000C84111 /* Info.plist */,
+			);
+			path = CroppingTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EC4F3021D51B51000C84111 /* CroppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC4F3151D51B51000C84111 /* Build configuration list for PBXNativeTarget "CroppingTests" */;
+			buildPhases = (
+				2EC4F2FF1D51B51000C84111 /* Sources */,
+				2EC4F3001D51B51000C84111 /* Frameworks */,
+				2EC4F3011D51B51000C84111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CroppingTests;
+			productName = CroppingTests;
+			productReference = 2EC4F3031D51B51000C84111 /* CroppingTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EC4F2FB1D51B51000C84111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Hakanson";
+				TargetAttributes = {
+					2EC4F3021D51B51000C84111 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2EC4F2FE1D51B51000C84111 /* Build configuration list for PBXProject "CroppingTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EC4F2FA1D51B51000C84111;
+			productRefGroup = 2EC4F3041D51B51000C84111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EC4F3021D51B51000C84111 /* CroppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EC4F3011D51B51000C84111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFA409E1D52883B005B2F6B /* Left.MOV in Resources */,
+				2EFA409F1D52883B005B2F6B /* Portrait.MOV in Resources */,
+				2EFA40A01D52883B005B2F6B /* Right.MOV in Resources */,
+				2EFA40A11D52883B005B2F6B /* Upside.MOV in Resources */,
+				2EFA40991D52568E005B2F6B /* sample-video.mp4 in Resources */,
+				2EC4F3111D51B51000C84111 /* LaunchScreen.storyboard in Resources */,
+				2EC4F30E1D51B51000C84111 /* Assets.xcassets in Resources */,
+				2EC4F30C1D51B51000C84111 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EC4F2FF1D51B51000C84111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC4F3091D51B51000C84111 /* ViewController.swift in Sources */,
+				2EC4F3071D51B51000C84111 /* AppDelegate.swift in Sources */,
+				2EFA40971D5237B8005B2F6B /* CropGridView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EC4F30A1D51B51000C84111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC4F30B1D51B51000C84111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EC4F30F1D51B51000C84111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC4F3101D51B51000C84111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EC4F3131D51B51000C84111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EC4F3141D51B51000C84111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EC4F3161D51B51000C84111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CroppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schedule4.CroppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EC4F3171D51B51000C84111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CroppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schedule4.CroppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EC4F2FE1D51B51000C84111 /* Build configuration list for PBXProject "CroppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC4F3131D51B51000C84111 /* Debug */,
+				2EC4F3141D51B51000C84111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC4F3151D51B51000C84111 /* Build configuration list for PBXNativeTarget "CroppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC4F3161D51B51000C84111 /* Debug */,
+				2EC4F3171D51B51000C84111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EC4F2FB1D51B51000C84111 /* Project object */;
+}

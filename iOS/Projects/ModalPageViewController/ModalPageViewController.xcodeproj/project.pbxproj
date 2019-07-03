@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E49F4721DAE8E0A0082B3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49F4711DAE8E0A0082B3EF /* AppDelegate.swift */; };
+		2E49F4741DAE8E0A0082B3EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49F4731DAE8E0A0082B3EF /* ViewController.swift */; };
+		2E49F4771DAE8E0A0082B3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E49F4751DAE8E0A0082B3EF /* Main.storyboard */; };
+		2E49F4791DAE8E0A0082B3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E49F4781DAE8E0A0082B3EF /* Assets.xcassets */; };
+		2E49F47C1DAE8E0A0082B3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E49F47A1DAE8E0A0082B3EF /* LaunchScreen.storyboard */; };
+		2E49F4871DAE8E0A0082B3EF /* ModalPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49F4861DAE8E0A0082B3EF /* ModalPageViewControllerTests.swift */; };
+		2E49F4921DAE8E350082B3EF /* ModalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49F4911DAE8E350082B3EF /* ModalPageViewController.swift */; };
+		2E49F4941DAE8E620082B3EF /* ModalPageViewTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49F4931DAE8E620082B3EF /* ModalPageViewTransitioner.swift */; };
+		2E49F4961DAEB9320082B3EF /* ModalPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E49F4951DAEB9320082B3EF /* ModalPageViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E49F4831DAE8E0A0082B3EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E49F4661DAE8E0A0082B3EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E49F46D1DAE8E0A0082B3EF;
+			remoteInfo = ModalPageViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E49F46E1DAE8E0A0082B3EF /* ModalPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E49F4711DAE8E0A0082B3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E49F4731DAE8E0A0082B3EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E49F4761DAE8E0A0082B3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E49F4781DAE8E0A0082B3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E49F47B1DAE8E0A0082B3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E49F47D1DAE8E0A0082B3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E49F4821DAE8E0A0082B3EF /* ModalPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E49F4861DAE8E0A0082B3EF /* ModalPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPageViewControllerTests.swift; sourceTree = "<group>"; };
+		2E49F4881DAE8E0A0082B3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E49F4911DAE8E350082B3EF /* ModalPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPageViewController.swift; sourceTree = "<group>"; };
+		2E49F4931DAE8E620082B3EF /* ModalPageViewTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPageViewTransitioner.swift; sourceTree = "<group>"; };
+		2E49F4951DAEB9320082B3EF /* ModalPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalPageViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E49F46B1DAE8E0A0082B3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E49F47F1DAE8E0A0082B3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E49F4651DAE8E0A0082B3EF = {
+			isa = PBXGroup;
+			children = (
+				2E49F4701DAE8E0A0082B3EF /* ModalPageViewController */,
+				2E49F4851DAE8E0A0082B3EF /* ModalPageViewControllerTests */,
+				2E49F46F1DAE8E0A0082B3EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E49F46F1DAE8E0A0082B3EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E49F46E1DAE8E0A0082B3EF /* ModalPageViewController.app */,
+				2E49F4821DAE8E0A0082B3EF /* ModalPageViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E49F4701DAE8E0A0082B3EF /* ModalPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E49F4711DAE8E0A0082B3EF /* AppDelegate.swift */,
+				2E49F4731DAE8E0A0082B3EF /* ViewController.swift */,
+				2E49F4751DAE8E0A0082B3EF /* Main.storyboard */,
+				2E49F4781DAE8E0A0082B3EF /* Assets.xcassets */,
+				2E49F47A1DAE8E0A0082B3EF /* LaunchScreen.storyboard */,
+				2E49F47D1DAE8E0A0082B3EF /* Info.plist */,
+				2E49F4911DAE8E350082B3EF /* ModalPageViewController.swift */,
+				2E49F4931DAE8E620082B3EF /* ModalPageViewTransitioner.swift */,
+				2E49F4951DAEB9320082B3EF /* ModalPageViewController.xib */,
+			);
+			path = ModalPageViewController;
+			sourceTree = "<group>";
+		};
+		2E49F4851DAE8E0A0082B3EF /* ModalPageViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E49F4861DAE8E0A0082B3EF /* ModalPageViewControllerTests.swift */,
+				2E49F4881DAE8E0A0082B3EF /* Info.plist */,
+			);
+			path = ModalPageViewControllerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E49F46D1DAE8E0A0082B3EF /* ModalPageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E49F48B1DAE8E0A0082B3EF /* Build configuration list for PBXNativeTarget "ModalPageViewController" */;
+			buildPhases = (
+				2E49F46A1DAE8E0A0082B3EF /* Sources */,
+				2E49F46B1DAE8E0A0082B3EF /* Frameworks */,
+				2E49F46C1DAE8E0A0082B3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalPageViewController;
+			productName = ModalPageViewController;
+			productReference = 2E49F46E1DAE8E0A0082B3EF /* ModalPageViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E49F4811DAE8E0A0082B3EF /* ModalPageViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E49F48E1DAE8E0A0082B3EF /* Build configuration list for PBXNativeTarget "ModalPageViewControllerTests" */;
+			buildPhases = (
+				2E49F47E1DAE8E0A0082B3EF /* Sources */,
+				2E49F47F1DAE8E0A0082B3EF /* Frameworks */,
+				2E49F4801DAE8E0A0082B3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E49F4841DAE8E0A0082B3EF /* PBXTargetDependency */,
+			);
+			name = ModalPageViewControllerTests;
+			productName = ModalPageViewControllerTests;
+			productReference = 2E49F4821DAE8E0A0082B3EF /* ModalPageViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E49F4661DAE8E0A0082B3EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "David Hakanson";
+				TargetAttributes = {
+					2E49F46D1DAE8E0A0082B3EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					2E49F4811DAE8E0A0082B3EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E49F46D1DAE8E0A0082B3EF;
+					};
+				};
+			};
+			buildConfigurationList = 2E49F4691DAE8E0A0082B3EF /* Build configuration list for PBXProject "ModalPageViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E49F4651DAE8E0A0082B3EF;
+			productRefGroup = 2E49F46F1DAE8E0A0082B3EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E49F46D1DAE8E0A0082B3EF /* ModalPageViewController */,
+				2E49F4811DAE8E0A0082B3EF /* ModalPageViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E49F46C1DAE8E0A0082B3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E49F47C1DAE8E0A0082B3EF /* LaunchScreen.storyboard in Resources */,
+				2E49F4961DAEB9320082B3EF /* ModalPageViewController.xib in Resources */,
+				2E49F4791DAE8E0A0082B3EF /* Assets.xcassets in Resources */,
+				2E49F4771DAE8E0A0082B3EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E49F4801DAE8E0A0082B3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E49F46A1DAE8E0A0082B3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E49F4741DAE8E0A0082B3EF /* ViewController.swift in Sources */,
+				2E49F4941DAE8E620082B3EF /* ModalPageViewTransitioner.swift in Sources */,
+				2E49F4721DAE8E0A0082B3EF /* AppDelegate.swift in Sources */,
+				2E49F4921DAE8E350082B3EF /* ModalPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E49F47E1DAE8E0A0082B3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E49F4871DAE8E0A0082B3EF /* ModalPageViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E49F4841DAE8E0A0082B3EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E49F46D1DAE8E0A0082B3EF /* ModalPageViewController */;
+			targetProxy = 2E49F4831DAE8E0A0082B3EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E49F4751DAE8E0A0082B3EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E49F4761DAE8E0A0082B3EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E49F47A1DAE8E0A0082B3EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E49F47B1DAE8E0A0082B3EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E49F4891DAE8E0A0082B3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E49F48A1DAE8E0A0082B3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E49F48C1DAE8E0A0082B3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalPageViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.t1no.ModalPageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2E49F48D1DAE8E0A0082B3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalPageViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.t1no.ModalPageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2E49F48F1DAE8E0A0082B3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModalPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.t1no.ModalPageViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalPageViewController.app/ModalPageViewController";
+			};
+			name = Debug;
+		};
+		2E49F4901DAE8E0A0082B3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModalPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.t1no.ModalPageViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalPageViewController.app/ModalPageViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E49F4691DAE8E0A0082B3EF /* Build configuration list for PBXProject "ModalPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E49F4891DAE8E0A0082B3EF /* Debug */,
+				2E49F48A1DAE8E0A0082B3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E49F48B1DAE8E0A0082B3EF /* Build configuration list for PBXNativeTarget "ModalPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E49F48C1DAE8E0A0082B3EF /* Debug */,
+				2E49F48D1DAE8E0A0082B3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E49F48E1DAE8E0A0082B3EF /* Build configuration list for PBXNativeTarget "ModalPageViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E49F48F1DAE8E0A0082B3EF /* Debug */,
+				2E49F4901DAE8E0A0082B3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E49F4661DAE8E0A0082B3EF /* Project object */;
+}
