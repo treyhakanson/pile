@@ -1,0 +1,12 @@
+{{>header}}
+        <!-- Loop over users -->
+        {{#users}}
+            <h1>Hello {{name}}!</h1>
+            <h2>contact: {{email}}</h2>
+            <hr>
+        {{/users}}
+        <!-- Run if there are no users -->
+        {{^users}}
+            <h1>There are no users.</h1>
+        {{/users}}
+{{>footer}}
