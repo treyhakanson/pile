@@ -1,0 +1,15 @@
+<div>
+    <div class="col-md-6 col-md-offset-3">
+        <a href="#/">Back to Search</a>
+        <h4>Forecast</h4>
+        <h5>{{ cityName }} | {{ cnt }} Day</h5>
+        <a href="#/forecast/2" class="btn btn-default" ng-class="{ 'btn-primary': cnt === '2' }">2 Day</a>
+        <a href="#/forecast/5" class="btn btn-default" ng-class="{ 'btn-primary': cnt === '5' }">5 Day</a>
+        <a href="#/forecast/7" class="btn btn-default" ng-class="{ 'btn-primary': cnt === '7' }">7 Day</a>
+        <a href="#/forecast/10" class="btn btn-default" ng-class="{ 'btn-primary': cnt === '10' }">10 Day</a>
+        <hr />
+        <div ng-repeat="result in weatherResult.list">
+            <weather-panel result="result" convert-to-date="convertToDate(dt)" date-format="MMM d, y"></weather-panel>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "cdn-server",
+  "description": "a simple web server for angular applications",
+  "main": "index.js",
+  "authors": [
+    "Trey Hakanson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/treyhakanson/angular-1-notes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.3",
+    "angular-resource": "^1.6.3",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,12 @@
+<div class="col-md-6 col-md-offset-3">
+	<div ng-if="showError">
+		<div class="alert alert-warning">Error, Please Select a City from the Homepage.</div>
+		<hr>
+		<a href="#/">Go Home</a>
+	</div>
+	<div ng-if="!showError">
+		<a href="#/">Go Home</a>
+		<hr>
+		<h2>Forecast for {{ cityName }}</h2>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2>Search for a City</h2>
+	<form ng-submit="submit()">
+		<input type="text" class="form-control" ng-model="cityName" test-formatter>
+		<div style="margin-top:1rem;">
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="button" class="btn btn-default" ng-click="makeDefault()">Make Default</button>
+		</div>
+	</form>
+	<hr>
+	<div class="alert alert-success" ng-if="showAlert">Succesfully Set as Default Location!</div>
+</div>

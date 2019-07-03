@@ -1,0 +1,16 @@
+{
+  "name": "cdn-server",
+  "version": "1.0.0",
+  "description": "a simple web server for angular applications",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm i && bower i",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Trey Hakanson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
