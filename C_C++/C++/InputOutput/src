@@ -1,0 +1,27 @@
+// imports
+#include <iostream>
+
+// elimates the need to invoke members of this class
+// using :: (can say `cout` instead of `std::cout`)
+using namespace std;
+
+int main() {
+    // output a basic string
+    string text = "hello world";
+    cout << text << endl;
+
+    /*
+        take some user input
+        Keep in mind that cin, by default, will skip
+        leading whitespace, and stop reading once it
+        ecounters the next whitespace. This means that
+        typing something like " hello world" will only
+        capture "hello".
+    */
+    string input;
+    cout << "Enter something:" << endl;
+    cin >> input;
+    cout << "User entered: " + input << endl;
+
+    return 0;
+}
