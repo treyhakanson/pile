@@ -1,0 +1,11 @@
+html
+	head
+	body
+		h1 Hello World!
+		h2 Please enter your name:
+		form(method='POST' action='/person')
+			input(type='text' id='firstname' name='firstname' placeholder='First Name')
+			br
+			input(type='text' id='lastname' name='lastname' placeholder='Last Name')
+			br
+			input(type='submit' name='submit')
