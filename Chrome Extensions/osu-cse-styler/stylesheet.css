@@ -1,0 +1,39 @@
+body {
+	padding: 25px;
+	font-size: 17px !important;
+	color:#232323 !important;
+	max-width: 750px !important;
+	line-height: 1.5 !important;
+	margin: 0 auto !important;
+	font-family: SourceSansPro-Regular, Tahoma, Helvetica, sans-serif !important;
+}
+
+table {
+	border-collapse: collapse !important;
+	border: 1px solid #a0a0a0 !important;
+}
+
+table table {
+	border: none !important;
+}
+
+table tr:nth-of-type(odd) {
+	background-color: #eaeaea !important;
+}
+
+table tr:first-of-type {
+	background-color: #d5d5d5 !important;
+}
+
+a[href],
+a[href]:link,
+a[href]:visited,
+a[href]:active {
+	color: #3f81ff !important;
+	text-decoration: underline !important;
+}
+
+a[href]:hover {
+	color: #2d5eb8 !important;
+	cursor: pointer !important;
+}
