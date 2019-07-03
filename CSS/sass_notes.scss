@@ -1,0 +1,285 @@
+// to transpile scss -> css run:
+// sass input.scss output.css
+
+// vairables
+	// variables have context, and are only available
+	// at the level of nesting they are enclosed
+	$font: 'Avenir-Book', Helvetica, Tahoma, sans-serif;
+	$color: #3ADFCD;
+
+	.colored {
+		font-family: $font;
+		background-color: $color;
+	}
+
+// nesting
+	.parent {
+		.child { }
+		.other-child { }
+	}
+	// is the same as...
+	.parent .child { }
+	.parent .other-child { }
+
+	// can use the parent in other ways than the default too
+	// (the default places the parent behind the child)
+	a {
+		&:hover {  }
+		body & {  }
+	}
+	// is equal to..
+	a:hover {  }
+	body a {  }
+
+	// can also nest properties with the same namespace
+	p {
+		font {
+			family: Tahoma;
+			size: 17px;
+			weight: bold;
+		}
+	}
+	// equals...
+	p {
+		font-family: Tahoma;
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	// can interpolate variables anywhere in the
+	// file using #{}
+	$class-prefix = 'some-really-long-prefix';
+
+	.#{$class-prefix}-color { // equivalent to .some-really-long-prefix-color
+		// some styling
+	}
+
+// partials
+	// partials are scss files that contain snippets
+	// of css you can include in other scss files,
+	// allowing for modularization. Partials can be
+	// imported with @import and are to be named with
+	// a leading underscore, like this:
+	// _partial.scss
+
+// @import
+	// unlike noremal css where @import causes another
+	// http request, scss imports just tell sass to
+	// transpile imports into that file, generating one
+	// final css file
+	
+	// can import with no extensions, and sass will
+	// attempt to find that file with either the
+	// scss or sass extensions
+	@import "foo"; // would find foo.scss or foo.sass
+
+	// can import multiple files in a single statement
+	@import "foo", "bar";
+
+// mixins
+	// mixins are basically like css functions. Great
+	// for handling vendor prefixes:
+	@mixin border-radius($radius) {
+	  -webkit-border-radius: $radius;
+	     -moz-border-radius: $radius;
+	      -ms-border-radius: $radius;
+	          border-radius: $radius;
+	}
+
+	// need to use the @include in order to
+	// properly utilize
+	.box { @include border-radius(10px); }
+
+	// can also have variadic args, useful for things like
+	// shadows, backgrounds, flex, and other properties with
+	// variable shorthand and multiple vendor prefixes
+	@mixin shadow($args...) {
+		// do something
+	}
+
+	// can also pass blocks to mixins:
+	@mixin apply-to-ie6-only {
+	  * html {
+	    @content;
+	  }
+	}
+	@include apply-to-ie6-only {
+	  #logo { // this will end up in the above '* html' rule
+	    background-image: url(/logo.gif);
+	  }
+	}
+
+// extensions
+	// pretty self-explanatory; extend css
+	// classes with all the functionality of
+	// an existing class:
+	.message {
+	  border: 1px solid #ccc;
+	  padding: 10px;
+	  color: #333;
+	}
+
+	.success {
+	  @extend .message;
+	  border-color: green;
+	}
+
+	.error {
+	  @extend .message;
+	  border-color: red;
+	}
+
+	.warning {
+	  @extend .message;
+	  border-color: yellow;
+	}
+
+// math
+	// can use the following operators
+	// with scss:
+		// +, -
+		// *, /
+		// %
+	.some-selector {
+		height: 200px / 900px * 100%;
+}
+
+// logic
+	// have comparison operators (==, !=) and
+	// basic if-else logic:
+	@mixin does-parent-exist {
+	  @if & { // checking if the parent (&) exists
+	    &:hover {
+	      // change the hover method if it does
+	    }
+	  } @else {
+	    a {
+	      // otherwise apply this other rule
+	    }
+	  }
+	} // '@else if' is also available
+
+// media selectors
+	// can nest media selectors in a rule
+	// to avoid reqriting a ton of code again
+	// within media tags:
+	.sidebar {
+	  width: 300px;
+	  @media screen and (orientation: landscape) {
+	    width: 500px;
+	  }
+	}
+	// results in...
+	.sidebar {
+	  width: 300px; 
+	}
+	@media screen and (orientation: landscape) {
+	    .sidebar {
+	      width: 500px; 
+	   }
+   }
+
+   // media queries can also use sassscript variables
+   // and interpolation
+   $type: "screen";
+   $target: "-webkit-min-device-pixel-ratio";
+   $value: 1.5;
+
+   .sidebar {
+   	width: 300px;
+   	@media #{$type} and ($target: $value) {
+   		width: 500px;
+   	}
+   }
+
+// debugging
+	// can print messages to debug sassscript:
+	@debug 10em + 12em;
+	// outputs: Line 1 DEBUG: 22em
+
+	// @warn can be used to output to the console
+	// to warn a user about depracations, intricacies
+	// of a mixin, etc.:
+	@mixin adjust-location($x, $y) {
+	  @if unitless($x) {
+	    @warn "Assuming #{$x} to be in pixels";
+	    $x: 1px * $x;
+	  }
+	  @if unitless($y) {
+	    @warn "Assuming #{$y} to be in pixels";
+	    $y: 1px * $y;
+	  }
+	  position: relative; left: $x; top: $y;
+	}
+
+	// @error can be used to throw a fatal error in
+	// a sassscript function
+	@mixin adjust-location($x, $y) {
+	  @if unitless($x) {
+	    @error "$x may not be unitless, was #{$x}.";
+	  }
+	  @if unitless($y) {
+	    @error "$y may not be unitless, was #{$y}.";
+	  }
+	  position: relative; left: $x; top: $y;
+	}
+
+// Sassscript Statements
+	// for loops are available, and can be used
+	// to generate sequential rules
+	@for $i from 1 through 3 {
+		.item-#{$1} { width: 2em * $i; }
+	}
+	// gives...
+	.item-1 { width: 2em; }
+	.item-2 { width: 4em; }
+	.item-3 { width: 6em; }
+
+	// also have for in for lists
+	@for $food in cheeseburger, hotdog, french-fries {
+		// do stuff
+	}
+
+	// can also use multiple assignment with the
+	// each iterator:
+	@each $food, $size, $calories in (cheeseburger, L, 430)
+												(hotdog, S, 320)
+												(french-fries, M, 210) {
+		// $food, $size, and $calories are available in
+		// each iteration
+	}
+	// can also use @each with maps to assign a variable to
+	// the key and value for iteration purposes
+
+	// @while loops are also available
+
+// functions
+	// work as one would expect, the simply return a value
+	$grid-width: 40px;
+	$gutter-width: 10px;
+
+	@function grid-width($n) {
+	  @return $n * $grid-width + ($n - 1) * $gutter-width;
+	}
+
+	#sidebar { width: grid-width(5); }
+
+// compiling
+	// can change how the scss is compressed using the --style flag
+	// on compile
+	// :compressed is good for production
+	// :expanded is good for debugging
+
+
+
+
+
+
+
+
+
+
+
+
+
+

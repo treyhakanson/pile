@@ -1,0 +1,20 @@
+.class-1 {
+	color: blue;
+	.class-2 {
+		color: blue;
+		.class-3 {
+			color: blue;
+		}	
+	}	
+}
+@include media-query {
+	.class-1 {
+		color: red;
+	}
+	.class-2 {
+		color: red;
+	}
+	.class-3 {
+		color: red;
+	}
+}	

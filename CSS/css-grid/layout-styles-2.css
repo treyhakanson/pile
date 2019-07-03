@@ -1,0 +1,42 @@
+.container * {
+    background-color: rgb(136, 74, 111);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "header header header"
+      "sidebar content-1 content-1"
+      "sidebar content-2 content-3"
+      "footer footer footer";
+}
+
+/* IMPORTANT: do not surrond grid-area values with quotes! */
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+
+.content-2 {
+  grid-area: content-2;
+}
+
+.content-3 {
+  grid-area: content-3;
+}
+
+.footer {
+  grid-area: footer;
+}

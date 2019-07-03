@@ -1,0 +1,23 @@
+/*
+ IMPORTANT TO KEEP IN MIND
+ The 'flex' property gives containers the ability to
+ manipulate its child items' height, width, and position,
+ so be aware of that before using
+ */
+
+ /*
+	parent container -> flex container
+	children -> flex items
+ */
+
+ /*
+	PARENT PROPERTIES
+ */
+ .flex-container {
+ 	display: flex; /* sets up the element as a flex-container */
+ }
+
+ /*
+	CHILD PROPERTIES
+ */
+
