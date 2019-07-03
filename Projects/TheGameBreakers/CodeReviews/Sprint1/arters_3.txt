@@ -1,0 +1,31 @@
+Author: Dan Arters
+9/27/18
+Sprint 1
+Code Review
+
+Files: /Command/*
+Authors: Trey Hakanson
+Time: ~5 minutes 
+* for most files (I assume because the first command was used as a template), there are unused imports that can be gotten rid of
+* ICommand descendents are a good wrapper for the Execute function - work as intended 
+* commands are grouped in folders by entity and interaction type, makes sense to me 
+
+Files: /Controller/*
+Authors: Trey Hakanson, Dan Arters
+Time: ~10 minutes
+* Controller.cs works as intended without any knowledge of the functionality being mapped via keys/commands (apart from knowing there is an idle state to return to)
+* Adding onto the previous comment, idle state could be an optional parameter to allow the controller to be more portable to applications like a menu that wouldnt need this functionality. As a counterargument to this, a null command object could be passed in as the idle state with the same end result 
+* In Controller.cs, entity doesn't appear to be used (maybe relic from Sprint 0?)
+
+Files: /Entity/*
+Authors: Trey Hakanson, Jacob Lingo
+Time: ~10 minutes
+* In BlockEntity.cs, you could use a dictionary/map literal instead of creating a dictionary and adding items one by one 
+* The transition timespan seems like a hacky solution to switching the sprite after the settle time has been met. One different solution could be a transition sprite class that takes a callback which is executed once all frames have been displayed. This may be more work than it's worth for this sprint, but for future sprints with more transitions, it may save time and possible timing bugs 
+
+Files: /State/*
+Authors: Trey Hakanson
+Time: ~15 minutes
+* Extending MarioActionState.cs only with transitions that need to happen for a particular class makes sense. Eliminates repeat null methods such as "keep standing still if nothing has changed" in every child state class. 
+* It is clear which actions trigger a state change for a specific state since they are the only methods that are overridden from MarioActionState.cs. It would be very easy to create a state diagram from this codebase for that reason
+* If another entity (Command classes here) must be aware of the state machine methods to call them, it may make sense to use an interface to define which methods the StateMachine cmust implement. Probably not useful for sprint 1, but in the case which we could have two AvatarStateMachines (LuigiStateMachine, MarioStateMachine), it would make sense to have an interface

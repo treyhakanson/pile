@@ -1,0 +1,42 @@
+Author: Jacob Lingo
+10/16/18
+Sprint 2
+Code Review
+
+Files: /Collider/*
+Authors: Dan Arters
+Time: 15 minutes
+ * BoundingBox.cs creates a bounding box around entities in the game and gives a visual representation of the collision zones.
+ * Will take into account the velocity of the entity so that it can accurately create a bounding box when entities are moving at increasing speeds
+   Unable to test this until increasing velocity is implemented in furture sprints. May not even need this functionality since the box is updated so frequently
+ * CollisionDetector.cs loops through the list of collidable entities twice, which will take quite a lot of time with an increasing number of entities.
+   In the future we may have to address this if the game begins to slow down will a larger number of entitiies.
+ * The re-aligning of Mario upon collison doesn't return Mario back to its original position at collision but aligns with the grid. So if you 
+   collide with the bounding box around the edges, it will sometimes move Mario up / down to match with the grid instead of leaving him in his place.
+   This will need to be addressed in future sprints so that mario is not being forcebally moved into a position.
+ 
+
+Files: /Entity/CollidableEntity.cs and descendents
+Authors: Trey Hakanson, Dan Arters
+Time: 5 minutes
+ * Defines all possible collisions for collidable entities. Creates a dictionary for each type of entity including heavy mario.
+ * Nothing is directly implemented in this entity so that specific responses are implemnted elsewhere. 
+ * Alligns the bounding box for collisions and determines what color it should be based on collision type
+ * Recreates the boudning box with a new entity everytime. We may be able to implement this differently so that we create one boudning box for each entity 
+   then update its position based on the entity it is attached to.
+
+
+Files: /Level/*
+Authors: Jacob Lingo
+Time: 5 Minutes
+ * Takes a levelAsset from game1.cs which is an xml file containing all the world information (block types, where they are etc.)
+ * Sets the level size based on the xml file but isn't able to control the background image. That information is still being dealt with in the game1.cs file.
+   This will need to be addressed in the future for scrolling and other functionality. Also, scalling the background image to the level size will need to be addressed as well.
+ * Creates new factories everytime LevelLoader() is called. This can probably be done once elsewhere so that when there are multiple levels you are not creating mulitple factories.
+ * Switch case adds a new entity to the _entities list so that they can be drawn and updated in the game1.cs file.
+
+
+Files: /State/Mario/*
+Authors: Trey Hakanson
+Time: 5 minutes
+ * MarioActionState.cs sets the velocity but is aware of BoundingBox.cs 

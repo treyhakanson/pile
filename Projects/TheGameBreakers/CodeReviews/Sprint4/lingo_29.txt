@@ -1,0 +1,17 @@
+Jacob Lingo
+11/13/18
+Sprint 4
+Code Review
+
+Files: /Scoring/ScoreTracker.cs
+Author: Trey Hakanson
+Time: 20 minutes
+ * Score tracker tracks the score of the game, coins collected, and lives 
+ * Creates a dictionary containing these values and a tupled heuristic with values to deal with collisions and how to handle them
+ * Is able to take into account collisons between two entities regardless of direction of collision
+ * Uses a function to compute scoring values so things such as reaching the flagpole at specific heights are handled dynamically instead of statically
+ * I find this code to be extremely confusing. It is difficult to follow what is going on, thought it works well.
+ * Easy to get values out to update the HUD and handle when to display game over.
+ * I do not see the benefit of handling the scoring in this manner. It could have been handled in the collisions, such as colliding with specific items
+   incrememented a score. Just adding something such as if(collisions of MarioEntity and ItemEntity(star)) score += 1000. A large switch case might have been
+   simpler, maybe not as efficient or elegant?   

@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LevelAsset>
+  <Height>224</Height>
+  <Width>320</Width>
+  <Entities>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>0</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>0</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>1</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>1</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>2</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>2</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>3</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>3</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>4</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>4</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>5</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>2</EntityType>
+      <Row>5</Row>
+      <Column>2</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+
+    <Item>
+      <EntityType>2</EntityType>
+      <Row>5</Row>
+      <Column>17</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>5</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>6</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>2</EntityType>
+      <Row>6</Row>
+      <Column>2</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>3</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>4</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>12</EntityType>
+      <Row>6</Row>
+      <Column>5</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>6</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>7</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>4</EntityType>
+      <Row>6</Row>
+      <Column>8</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>9</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>10</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>4</EntityType>
+      <Row>6</Row>
+      <Column>11</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>12</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>13</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>4</EntityType>
+      <Row>6</Row>
+      <Column>14</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>15</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>3</EntityType>
+      <Row>6</Row>
+      <Column>16</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>2</EntityType>
+      <Row>6</Row>
+      <Column>17</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>6</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>7</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>7</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>8</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>8</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>9</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>9</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>10</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>10</Row>
+      <Column>9</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>10</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>11</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>11</Row>
+      <Column>7</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>11</Row>
+      <Column>8</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>11</Row>
+      <Column>9</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>11</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>12</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>1</EntityType>
+      <Row>12</Row>
+      <Column>1</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>4</EntityType>
+      <Row>8</Row>
+      <Column>1</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems>
+        <Item>
+          <ItemType>4</ItemType>
+        </Item>
+      </EntityItems>
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>12</Row>
+      <Column>6</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>12</Row>
+      <Column>7</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>12</Row>
+      <Column>8</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>6</EntityType>
+      <Row>12</Row>
+      <Column>9</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>9</EntityType>
+      <Row>12</Row>
+      <Column>14</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>9</EntityType>
+      <Row>12</Row>
+      <Column>16</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>9</EntityType>
+      <Row>12</Row>
+      <Column>18</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>12</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>0</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>1</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>2</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>3</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>4</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>5</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>6</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>7</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>8</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>9</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>10</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>11</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>12</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>13</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>14</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>15</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>16</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>17</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>18</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+    <Item>
+      <EntityType>5</EntityType>
+      <Row>13</Row>
+      <Column>19</Column>
+      <OffsetX>0</OffsetX>
+      <OffsetY>0</OffsetY>
+      <EntityItems />
+    </Item>
+  </Entities>
+</LevelAsset>

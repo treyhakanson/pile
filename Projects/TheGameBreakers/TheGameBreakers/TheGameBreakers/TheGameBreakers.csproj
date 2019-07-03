@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00FA7B5C-BD26-4EF8-B817-68BF343290E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheGameBreakers</RootNamespace>
+    <AssemblyName>TheGameBreakers</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Collider\BoundingBox.cs" />
+    <Compile Include="Collider\CollisionDetector.cs" />
+    <Compile Include="Collider\ICollisionHandler.cs" />
+    <Compile Include="Collider\Motion.cs" />
+    <Compile Include="Command\CheckpointCommand.cs" />
+    <Compile Include="Command\BBCommand.cs" />
+    <Compile Include="Command\PauseCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Mario\Action\MarioCrouchCommand.cs" />
+    <Compile Include="Command\Mario\Action\MarioIdleCommand.cs" />
+    <Compile Include="Command\Mario\Action\MarioJumpCommand.cs" />
+    <Compile Include="Command\Mario\Action\MarioMoveLeftCommand.cs" />
+    <Compile Include="Command\Mario\Action\MarioMoveRightCommand.cs" />
+    <Compile Include="Command\Mario\PowerUp\MarioFireCommand.cs" />
+    <Compile Include="Command\Mario\PowerUp\MarioNormalCommand.cs" />
+    <Compile Include="Command\Mario\PowerUp\MarioSuperCommand.cs" />
+    <Compile Include="Command\Mario\PowerUp\MarioTakeDamageCommand.cs" />
+    <Compile Include="Command\MuteCommand.cs" />
+    <Compile Include="Command\QuitCommand.cs" />
+    <Compile Include="Command\Mario\MarioCommand.cs" />
+    <Compile Include="Command\ResetCommand.cs" />
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\GamePadController.cs" />
+    <Compile Include="Controller\IController.cs" />
+    <Compile Include="Controller\KeyboardController.cs" />
+    <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\Block\BrickBlockFragmentEntity.cs" />
+    <Compile Include="Entity\Block\FlagBlockEntity.cs" />
+    <Compile Include="Entity\Block\ItemBlockEntity.cs" />
+    <Compile Include="Entity\Block\PipeBlockEntity.cs" />
+    <Compile Include="Entity\CollidableEntity.cs" />
+    <Compile Include="Entity\Enemy\BooEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\BulletBillEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\GoombaEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\GreenKoopaEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\PirhanaEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\RedKoopaEnemyEntity.cs" />
+    <Compile Include="Entity\Enemy\RexEnemyEntity.cs" />
+    <Compile Include="Entity\ISpawnerEntity.cs" />
+    <Compile Include="Entity\Item\CoinItemEntity.cs" />
+    <Compile Include="Entity\Item\FireItemEntity.cs" />
+    <Compile Include="Entity\Item\OneUpItemEntity.cs" />
+    <Compile Include="Entity\Item\ItemEntity.cs" />
+    <Compile Include="Entity\Item\SuperItemEntity.cs" />
+    <Compile Include="Entity\Item\InvincibilityItemEntity.cs" />
+    <Compile Include="Entity\Spawner.cs" />
+    <Compile Include="Entity\StatelessEntity.cs" />
+    <Compile Include="Entity\Enemy\EnemyEntity.cs" />
+    <Compile Include="Entity\Block\BlockEntity.cs" />
+    <Compile Include="Entity\Block\BrickBlockEntity.cs" />
+    <Compile Include="Entity\Block\HiddenBlockEntity.cs" />
+    <Compile Include="Entity\Block\QuestionBlockEntity.cs" />
+    <Compile Include="Entity\Block\UsedBlockEntity.cs" />
+    <Compile Include="Entity\Block\FloorBlockEntity.cs" />
+    <Compile Include="Entity\Block\StairBlockEntity.cs" />
+    <Compile Include="Factory\BackgroundSpriteFactory.cs" />
+    <Compile Include="Factory\BlockSpriteFactory.cs" />
+    <Compile Include="Factory\BooSpriteFactory.cs" />
+    <Compile Include="Factory\BulletBillSpriteFactory.cs" />
+    <Compile Include="Factory\EnemyEntityFactory.cs" />
+    <Compile Include="Factory\ItemEntityFactory.cs" />
+    <Compile Include="Factory\ItemSpriteFactory.cs" />
+    <Compile Include="Factory\BlockEntityFactory.cs" />
+    <Compile Include="Factory\GoombaSpriteFactory.cs" />
+    <Compile Include="Factory\KoopaSpriteFactory.cs" />
+    <Compile Include="Factory\MarioSpriteFactory.cs" />
+    <Compile Include="Factory\PirhannaSpriteFactory.cs" />
+    <Compile Include="Factory\RexSpriteFactory.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Level\Background.cs" />
+    <Compile Include="Level\Hud.cs" />
+    <Compile Include="Level\LevelManager.cs" />
+    <Compile Include="Level\OverlayManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scoring\GameTimer.cs" />
+    <Compile Include="Scoring\IScoreHandler.cs" />
+    <Compile Include="Scoring\ScoreTracker.cs" />
+    <Compile Include="Sound\AudioPlayer.cs" />
+    <Compile Include="Sound\CollisionSoundsHandler.cs" />
+    <Compile Include="Sound\NamedSoundEffect.cs" />
+    <Compile Include="Sound\SoundFactory.cs" />
+    <Compile Include="Sprites\ISprite.cs" />
+    <Compile Include="Sprites\NullSprite.cs" />
+    <Compile Include="Sprites\Sprite.cs" />
+    <Compile Include="State\Block\BlockState.cs" />
+    <Compile Include="State\Block\BlockStateMachine.cs" />
+    <Compile Include="State\Block\BrickBlockState.cs" />
+    <Compile Include="State\Block\BrickBlockBumpState.cs" />
+    <Compile Include="State\Block\BrickBlockBreakState.cs" />
+    <Compile Include="State\Block\HiddenBlockState.cs" />
+    <Compile Include="State\Block\NullBlockState.cs" />
+    <Compile Include="State\Block\QuestionBlockState.cs" />
+    <Compile Include="State\Block\UsedBlockState.cs" />
+    <Compile Include="State\Block\UsedBlockBumpState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\EnemyDeadState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\EnemyLeftFacingAliveState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\EnemyRightFacingAliveState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\EnemyState.cs" />
+    <Compile Include="State\Enemy\EnemyStateMachine.cs" />
+    <Compile Include="State\Enemy\IEnemyStateMachine.cs" />
+    <Compile Include="State\Enemy\RexEnemyStateMachine.cs" />
+    <Compile Include="State\Enemy\EnemyStates\RexEnemyLeftFacingSmallState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\RexEnemyLeftFacingState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\RexEnemyRightFacingSmallState.cs" />
+    <Compile Include="State\Enemy\EnemyStates\RexEnemyRightFacingState.cs" />
+    <Compile Include="State\Mario\Action\MarioDeadState.cs" />
+    <Compile Include="State\Mario\Action\MarioFallLeftState.cs" />
+    <Compile Include="State\Mario\Action\MarioFallRightState.cs" />
+    <Compile Include="State\Mario\MarioActionStateMachine.cs" />
+    <Compile Include="State\Mario\Action\MarioCrouchRightState.cs" />
+    <Compile Include="State\Mario\Action\MarioCrouchLeftState.cs" />
+    <Compile Include="State\Mario\Action\MarioIdleLeftState.cs" />
+    <Compile Include="State\Mario\Action\MarioIdleRightState.cs" />
+    <Compile Include="State\Mario\Action\MarioJumpRightState.cs" />
+    <Compile Include="State\Mario\Action\MarioJumpLeftState.cs" />
+    <Compile Include="State\Mario\Action\MarioRunRightState.cs" />
+    <Compile Include="State\Mario\Action\MarioRunLeftState.cs" />
+    <Compile Include="State\Mario\Action\MarioActionState.cs" />
+    <Compile Include="State\Mario\MarioPowerUpStateMachine.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioDeadState.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioFireState.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioInvincibleState.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioNormalState.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioPowerUpState.cs" />
+    <Compile Include="State\Mario\PowerUp\MarioSuperState.cs" />
+    <Compile Include="Entity\MarioEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Level\Definitions\SecretLevelDefinition.xml" />
+    <Content Include="Level\Definitions\_LevelDefinition.xml" />
+    <Content Include="Level\Definitions\LevelDefinition.xml" />
+    <Content Include="Level\Definitions\TEST.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMLAsset\XMLAsset.csproj">
+      <Project>{a528692a-a305-4a63-9186-bd1d2a7dd19c}</Project>
+      <Name>XMLAsset</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)Level\Definitions\LevelDefinition.xml" "$(ProjectDir)bin\Windows\x86\$(ConfigurationName)"
+copy "$(ProjectDir)Level\Definitions\SecretLevelDefinition.xml" "$(ProjectDir)bin\Windows\x86\$(ConfigurationName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

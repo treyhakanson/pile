@@ -1,0 +1,16 @@
+a:after {
+   content: attr(href);
+   background-color: #fafafa;
+   padding: 5px;
+   border-radius: 2px;
+   box-shadow: 1px 1px 2px 2px rgba(32, 32, 32, 0.10);
+   color: #232323;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   display: none;
+}
+
+a:hover:after {
+   display: block;
+}

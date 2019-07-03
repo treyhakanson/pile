@@ -1,0 +1,13 @@
+Author: Dan Arters
+10/30/18
+Sprint 3
+Code Review
+
+Files: /Entity/ISpawnerEntity.cs /Entity/Spawner.cs /Level/LevelManager.cs /Entity/Block/BrickBlockEntity.cs
+Authors: Dan Arters
+Time: ~20 minutes 
+* Took a minute to figure out what spawnlocation was, but makes sense - Spawner performs the functionality of moving reserved entities to the entities list that will be drawn and updated in game.cs. 
+* One thing I noticed is that SpawnOne will empty the queue and only return one object, instead of just taking one spawned item out of the queue. This shouldnt be a big deal since we don't have any repeat spawners, but in a case of a box that multiple coins come out of, this will present an issue. 
+* We are holding more items in memory with this setup, since all entities are created at game load and the spawnables are just moved to a visible position upon spawn. I assume this was done since it is easier to initialize all objects at level load. If this memory increase presents an issue, it may make sense to trigger the creation of these spawnable objects upon needed. This would require saving a reference to the entities list and factories within the sprite, however, which starts to seem like spaghetti code. 
+* The spawnable velocities present in the brick block make it clear what each spawnable should do upon being created by the brick block, and it seems like it would be easy to change the explosion to use more or less fragments with that format. 
+* In level manager, it is very clear which items have spawnables since they are registered upon creating the entity. 

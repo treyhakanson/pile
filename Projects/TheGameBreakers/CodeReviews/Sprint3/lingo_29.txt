@@ -1,0 +1,12 @@
+Author: Jacob Lingo
+10/16/18
+Sprint 2
+Code Review
+
+Files: /Entity/Spawner
+Time: 10 minutes
+ * Spawner is a class that adds spawnable items to a queue.
+ * When spawning items, it checks to see if the queue has any items then removes them and adds it to the spawned list
+ * The spawned list is then used to eventually spawn items in the entities
+ * Seems staright forward in accomplishing its goal. The one item is marked as hardcoded doesn't seem like it will be an issue
+

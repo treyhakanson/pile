@@ -1,0 +1,13 @@
+Jacob Lingo
+11/29/18
+Sprint 5
+Code Review
+
+Files: State/Enemy/
+Author: Trey Hakanson
+Time: ~10 minutes
+ * Implemented logic behind the enemy rex. Creates the IEnemyStateMachine, RexEnemyStateMachine
+ * Rex has several states similar to mario. Once he is hit once he will decrease in size to a smaller version and then once dead he flattens agian.
+ * Fairly similar to the original mario statemachine, follows similar design pattern which is efficient and needs no real changes.
+ * Different point values handled inside of game1.cs. These point values should probably be handled in a seperate class instead of inside the game
+ * file, but as it works as is. Takes advantage of the heuristic scoring

@@ -1,0 +1,30 @@
+Author: Dan Arters
+10/16/18
+Sprint 2
+Code Review
+
+Files: /Collider/*
+Authors: Dan Arters
+Time: ~5 minutes 
+* This collision detector is currently N^2 runtime, which is certainly not going to scale when level definitions are larger
+* Short circuits do help with runtime in the BoundingBox.Overlaps method, but not asymtotic runtime 
+* It is worth noting that when looking at (and drawing) the bounding box, the box reflects the current velocity and will extend farther infront of an entity to expect the next movement. Works as intended for the current collider setup but may cause issues later if not accounted for 
+
+Files: /Entity/CollidableEntity.cs and descendents
+Authors: Trey Hakanson, Dan Arters
+Time: ~10 minutes
+* Dictionary of collisions makes sense to map all possibilities of colliding entity and direction, should provide for easy addition of entities 
+* Similar to the state machine, default do nothing methods that are overridden in the more specific class mean that a new entity only needs to define behavior that differentiates from the norm - solid
+* Assuming a collision with heavy mario is similar to a collision with normal mario will reduce the code to copy/paste. Just worth remembering when writing code since all other collisions are distinct
+* It may make sense to hold bounding box as an instance vairable and updating it when needed instead of creating a new instance each time the getter is called. This would increase the amount of code touching and aware of the bounding box, but would likely be faster than creating a new object each time - wrth doing if speed is really an issue 
+
+Files: /Level/*
+Authors: Jacob Lingo
+Time: ~5 minutes
+* For this sprint, it may not make sense to keep the level loader as an object since there are no instance vairables that really need to be saved and only one method is called. However, once we are loading multiple worlds, keeping instances of the factories saved will be useful. It would make sense to initialize the factories to instance vairbles in the constructor for this use case instead of during each LevelLoader call
+* I know what the 16*4 magic numbers that keep appearing are, but it would make sense to add a comment or make a static variable to reference (CellWidth=16, Scale=4);
+
+Files: /State/Mario/*
+Authors: Trey Hakanson
+Time: ~10 minutes
+* It's unfortunate that MarioActionState.cs is now aware of BaseEntity.cs (in addition to BaseEntity.cs being aware of MarioActionState.cs) by manually setting velocity values. However, I don't see a way around this since the state changes correspond to a change in velocity and separating the state change from the velocity change would probably be confusing when debugging. On the plus side, all the coupling is kept within the MarioActionState.cs and the descendents can effectively create new state changes without being aware of BaseEntity.cs

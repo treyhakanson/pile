@@ -1,0 +1,11 @@
+Author: Dan Arters
+11/13/18
+Sprint 4
+Code Review
+
+Files: /Sound/*
+Authors: Dan Arters
+Time: ~20 minutes 
+* In AudioPlayer.cs, it looks like we're assuming only one repeating (not expiring) sound. It makes sense that there would be only one song in the background but it could be useful to have a collection if there were other repeating background noises.
+* It looks like we're creating a new NamedSoundEffect object each time we need to make a collision sound. I'm not sure how the sound tracks are loaded, but it could be an issue if the whole audio file is re-loaded each time. If we have a known amount of sound effects and the object properties arent modified by playing the sound, it would make sense to create all the sound effects at the start and store a dictionary of each NamedSoundEffect.
+* As with the collision responses for entities, a dictionary makes sense for the collision mappings for sounds. Works well with dynamically adding sound effects and has an easy failover when no item is found. 
